@@ -1,0 +1,150 @@
+{% comment %} {% extends "dashboard/base.html" %} {% endcomment %}
+{%load static %}
+<link
+rel="shortcut icon"
+href="{%static 'apply/img/favicon.png'%}"
+type="image/x-icon"
+/>
+<!-- Font Icons css -->
+<link rel="stylesheet" href="{%static 'apply/css/font-icons.css'%}" />
+<!-- plugins css -->
+<link rel="stylesheet" href="{%static 'apply/css/plugins.css'%}" />
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="{%static 'apply/css/style.css'%}" />
+<!-- Responsive css -->
+<link rel="stylesheet" href="{%static 'apply/css/responsive.css'%}" />
+
+   <!-- All JS Plugins -->
+   <script src="{%static 'apply/js/plugins.js'%}"></script>
+   <!-- Main JS -->
+   <script src="{%static 'apply/js/main.js'%}"></script>
+
+{% comment %} {%block content%} {% endcomment %}
+    <div class="ltn__utilize-overlay"></div>
+
+    <!-- BREADCRUMB AREA START -->
+    <div class="ltn__breadcrumb-area text-left bg-overlay-white-30 bg-image "  data-bs-bg="img/bg/14.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ltn__breadcrumb-inner">
+                        <h1 class="page-title">Admissions</h1>
+                        <div class="ltn__breadcrumb-list">
+                            <ul>
+                                <li><a href="{%url 'home'%}"><span class="ltn__secondary-color"><i class="fas fa-home"></i></span> Home</a></li>
+                                <li>Admissions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BREADCRUMB AREA END -->
+    {% if messages %}
+	{% for message in messages %}
+		<div class="alert alert-success">{{ message }}</div>
+	{% endfor %}
+{% endif %}
+
+    <!-- APPOINTMENT AREA START -->
+    <div class="ltn__appointment-area pt-115--- pb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">                    
+                    <form action="{% url "admission_form" %}" method = "POST">
+                        {% csrf_token %}
+                        <div class="ltn__tab-menu ltn__tab-menu-3 ltn__tab-menu-top-right-- text-uppercase--- text-center">
+                            <div class="nav">
+                                <a class="active show" data-bs-toggle="tab" href="#liton_tab_3_1"> Information Details</a>
+                                {% comment %} <a data-bs-toggle="tab" href="#liton_tab_3_2" class="">2. Media</a>
+                                <a data-bs-toggle="tab" href="#liton_tab_3_3" class="">3. Location</a>
+                                <a data-bs-toggle="tab" href="#liton_tab_3_4" class="">4. Details</a>
+                                <a data-bs-toggle="tab" href="#liton_tab_3_5" class="">5. Amenities</a> {% endcomment %}
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane fade active show" id="liton_tab_3_1">
+                                <div class="ltn__apartments-tab-content-inner">
+                                    {% comment %} <h6>First Name</h6>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="input-item input-item-textarea ltn__custom-icon">
+                                                <input type="text" name="first_name" placeholder="*Title (mandatory)">
+                                            </div>
+                                            
+                                        </div>
+                                    </div> {% endcomment %}
+                                    <h6>Please Fill your details</h6>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="input-item  input-item-textarea ltn__custom-icon">
+                                                <input type="text" name="first_name" placeholder="Input your First Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-item input-item-textarea ltn__custom-icon">
+                                                <input type="text" name="last_name" placeholder="Input Your Last Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-item input-item-textarea ltn__custom-icon">
+                                                <input type="text" name="email" placeholder="Parent Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="date_of_birth">Date of Birth:</label>
+
+                                            <div class="input-item input-item-textarea ltn__custom-icon">
+                                                <input type="date" name="date_of_birth" placeholder="Date of Birth">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-item input-item-textarea ltn__custom-icon">
+                                                <input type="text" name="contact_number" placeholder="Parents Contact Info">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-item input-item-textarea ltn__custom-icon">
+                                                <input type="text" name="address" placeholder="Address">
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="btn-wrapper text-center--- mt-0">
+                                        <!-- <button type="submit" class="btn theme-btn-1 btn-effect-1 text-uppercase" >Next Step</button> -->
+                                        <button class="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">Submit</button>
+
+                                    </div>
+                                </div>
+                           
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- APPOINTMENT AREA END -->
+
+
+    <!-- CALL TO ACTION START (call-to-action-6) -->
+    <div class="ltn__call-to-action-area call-to-action-6 before-bg-bottom" data-bs-bg="img/1.jpg--">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="call-to-action-inner call-to-action-inner-6 ltn__secondary-bg position-relative text-center---">
+                        <div class="coll-to-info text-color-white">
+                            <h1>Looking for a dream school for your Child?</h1>
+                            <p>We can help you realize your dream of a dream school</p>
+                        </div>
+                        {% comment %} <div class="btn-wrapper">
+                            <a class="btn btn-effect-3 btn-white" href="contact.html">Explore Properties <i class="icon-next"></i></a>
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CALL TO ACTION END -->
+{% comment %} {% endblock content%} {% endcomment %}

@@ -1,0 +1,72 @@
+/*============================================================================================*/
+/* RESPONSIVE  */
+/*============================================================================================*/
+
+@media (max-width: 991px) {
+	#left_form {
+		padding:30px;
+		margin-bottom: 30px;
+    }
+}
+
+/* Tablet*/
+@media (max-width: 768px) {
+	
+}
+
+/* Mobile Landscape */
+@media (max-width: 767px) {
+	
+	.step {
+	    padding: 30px;
+	}
+
+	p.lead.styled {
+		font-size: 16px;
+	}
+	
+	#left_form img{
+		width: 100px;
+		height: 100%;
+    }
+	/* Margin tools */
+	.margin_60 {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.margin_30 {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	.margin_60_35 {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.add_bottom_60 {
+		margin-bottom: 30px;
+	}
+
+	footer p {
+		margin: 0 0 10px 0;
+		float: none;
+	}
+	footer ul {
+		float: none;
+		text-align: center;
+	}
+
+	.stepy-error {
+		display: block;
+	}
+
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+	
+	label.rating_type, .rating  {float:left; display:block;}
+	label.rating_type  {width:100%;}
+	
+	#map_contact {height: 300px;}
+	 
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Uploaded Results</title>
+</head>
+<body>
+    <h1>Uploaded Results</h1>
+    {% for student in results %}
+        <h2>{{ student.student_name }} ({{ student.student_code }})</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>CA1</th>
+                    <th>CA2</th>
+                    <th>Exam</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for subject in student.subjects %}
+                    <tr>
+                        <td>{{ subject.name }}</td>
+                        <td>{{ subject.CA1|default:"-" }}</td>
+                        <td>{{ subject.CA2|default:"-" }}</td>
+                        <td>{{ subject.Exam|default:"-" }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endfor %}
+</body>
+</html>

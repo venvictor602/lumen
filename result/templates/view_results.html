@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ student.first_name }} {{ student.last_name }} - Results</title>
+</head>
+<body>
+    <h2>{{ student.first_name }} {{ student.last_name }} - Results</h2>
+    <p>Email: {{ student.email }}</p>
+
+    <h3>Results</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>CA1</th>
+                <th>CA2</th>
+                <th>Exam</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for result in results %}
+                <tr>
+                    <td>{{ result.subject.name }}</td>
+                    <td>{{ result.ca1_score }}</td>
+                    <td>{{ result.ca2_score }}</td>
+                    <td>{{ result.exam_score }}</td>
+                    <td>{{ result.total_score }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h3>Class Position</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Class</th>
+                <th>Average Score</th>
+                <th>Position</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for position in positions %}
+                <tr>
+                    <td>{{ position.class_id.name }}</td>
+                    <td>{{ position.average_score }}</td>
+                    <td>{{ position.position }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

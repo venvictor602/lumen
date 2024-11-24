@@ -1,0 +1,239 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.ansonika.com/mastenia/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Oct 2024 13:06:41 GMT -->
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="MASTENIA - Register, Reservation, Questionare, Reviews form wizard">
+	<meta name="author" content="Ansonika">
+	<title>Excel generate</title>
+
+	<!-- Favicons-->
+	<link rel="shortcut icon" href="{%static 'img/favicon.ico'%}" type="image/x-icon">
+	<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+	<!-- GOOGLE WEB FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+
+	<!-- BASE CSS -->
+	<link href="{%static 'assets/css/bootstrap.min.css'%}" rel="stylesheet">
+	<link href="{%static 'assets/css/style.css'%}" rel="stylesheet">
+	<link href="{%static 'assets/css/responsive.css'%}" rel="stylesheet">
+	<link href="{%static 'assets/css/menu.css'%}" rel="stylesheet">
+	<link href="{%static 'assets/css/animate.min.css'%}" rel="stylesheet">
+	<link href="{%static 'assets/css/icon_fonts/css/all_icons_min.css'%}" rel="stylesheet">
+	<link href="{%static 'assets/css/skins/square/grey.css'%}" rel="stylesheet">
+
+	<!-- YOUR CUSTOM CSS -->
+	<link href="{%static 'assets/css/custom.css'%}" rel="stylesheet">
+
+	{% comment %} <script src="{%static 'js/modernizr.js'%}"></script> {% endcomment %}
+	<!-- Modernizr -->
+</head>
+
+<body>
+	
+	{% comment %} <div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div><!-- /Preload --> {% endcomment %}
+
+<div class="min-vh-100 d-flex flex-column">
+
+	{% comment %} <header>
+		<div class="container-fluid">
+		    <div class="row d-flex align-items-center">
+                <div class="col-3">
+                    <a href="index-2.html"><img src="img/logo.png" alt="" width="45" height="45"></a>
+                </div>
+                <div class="col-9">
+                    <div id="social">
+                        <ul>
+                            <li><a href="#0"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#0"><i class="bi bi-twitter-x"></i></a></li>
+                            <li><a href="#0"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#0"><i class="bi bi-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- /social -->
+                    <nav>
+                        <ul class="cd-primary-nav">
+                            <li><a href="index-2.html" class="animated_link">Register Version</a></li>
+                            <li><a href="reservation_version.html" class="animated_link">Reservation Version</a></li>
+                            <li><a href="questionnaire_version.html" class="animated_link">Questionnaire Version</a></li>
+                            <li><a href="review_version.html" class="animated_link">Review Version</a></li>
+                            <li><a href="about.html" class="animated_link">About Us</a></li>
+                            <li><a href="contacts.html" class="animated_link">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+		</div>
+		<!-- container -->
+	</header>
+	<!-- End Header --> {% endcomment %}
+
+	<div class="d-flex flex-column my-auto">
+		<main class="container">
+		    <div class="row justify-content-center">
+		        <div class="col-xl-11">
+		            <div class="form_container">
+		                <div class="row">
+		                    <div class="col-lg-4">
+		                        <div id="left_form">
+		                            <figure><img src="{%static 'assets/img/registration_bg.svg'%}" alt="" width="120" height="120"></figure>
+		                            <h3 style = "color:white;">Ministry of Housing						
+									</h3>
+									<h4 style = "color:white;">					
+									</h4>
+		                            <p>Mortage Repayment Collation App</p>
+									{% comment %} <a href="{%url 'custom-logout'%}"><p>Logout</p></a>
+									<a href="{%url 'upload-new-template'%}"><p>New Template</p></a>
+		                            <a href="{%url 'download-template'%}" id="more_info" ><i class="pe-7s-download"></i></a> {% endcomment %}
+		                        </div>
+		                    </div>
+		                    <div class="col-lg-8">
+
+		                        <form id="custom" action="{% url 'view_student_result' %}" method="POST" enctype="multipart/form-data" data-url="{% url 'view_student_result' %}">
+		                            {% csrf_token %}
+		                            <input id="website" name="website" type="text" value=""><!-- Leave for security protection, read docs for details. Delete this comment before to publish. -->
+		                            <fieldset title="Step 1">
+		                            
+		                                <div class="row">
+		                                    <div class="col-md-6">
+		                                        <div class="form-group">
+		                                            <select name="term" id="term" required class="form-control">
+														<option value="">Select Term</option>
+														<option value="First Term">First Term</option>
+														<option value="Second Term">Second Term</option>
+														<option value="Third Term">Third Term</option>
+													</select>
+		                                        </div>
+		                                    </div>
+		                                    <div class="col-md-6">
+		                                        <div class="form-group">
+													<select name="class_id" id="class_id" required class="form-control">
+														<option value="">Select Class</option>
+														<option value="1">JSS1</option>
+														<option value="2">JSS2</option>
+														<option value="3">JSS3</option>
+														<option value="4">SS1</option>
+														<option value="5">SS2</option>
+														<option value="6">SS3</option>
+													</select>
+		                                        </div>
+		                                    </div>
+		                                </div>
+		                               
+									
+										
+		                           
+		                            <input type="submit" class="finish" >
+		                        </form>
+								
+		                    </div>
+		                </div><!-- /Row -->
+		            </div><!-- /Form_container -->
+		            
+		        </div>
+		    </div>
+		    <!-- End row -->
+		</main>
+	</div>
+	<!-- /flex-column -->
+
+	
+    </div>
+	<!-- /flex-column -->
+
+	<div class="cd-overlay-nav">
+		<span></span>
+	</div>
+	<!-- cd-overlay-nav -->
+
+	<div class="cd-overlay-content">
+		<span></span>
+	</div>
+	<!-- cd-overlay-content -->
+
+	{% comment %} <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a> {% endcomment %}
+
+	<!-- Modal terms -->
+	<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+
+	<!-- Modal info -->
+	<div class="modal fade" id="more-info" tabindex="-1" role="dialog" aria-labelledby="more-infoLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="more-infoLabel">Frequently asked questions</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+
+	<!-- SCRIPTS -->
+	<script src="{%static 'assets/js/common_scripts.js'%}"></script>
+	<!-- Wizard script -->
+	<script src="{%static 'assets/js/sign-up-validate.js'%}"></script> 
+	<!-- Menu script -->
+	{% comment %} <script src="{%static 'js/velocity.min.js'%}"></script> {% endcomment %}
+	<script src="{%static 'assets/js/main.js'%}"></script>
+	<!-- Theme script -->
+	<script src="{%static 'assets/js/functions.js'%}"></script>
+
+	<script>$(document).ready(function () {
+		var form = $('#custom');
+		var actionUrl = form.data('url');  // Get the URL from the data attribute
+		form.attr('action', actionUrl);    // Set the form action dynamically if needed
+	});
+	</script>
+
+	<script>
+		document.getElementById('custom').action = "{% url 'view_student_result' %}";
+	</script>
+	
+
+</body>
+
+<!-- Mirrored from www.ansonika.com/mastenia/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 15 Oct 2024 13:06:56 GMT -->
+</html>

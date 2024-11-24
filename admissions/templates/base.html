@@ -1,0 +1,407 @@
+{%load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<!-- Mirrored from ecologytheme.com/theme/Lumen/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2024 18:09:02 GMT -->
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description" content="Lumen - Education HTML5 Template">
+	<meta name="keywords" content="college, education, institute, responsive, school, teacher, template, university">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lumen</title> 
+	<link rel="shortcut icon" href="{%static 'images/WhatsApp_Image_2024-10-01_at_7.54.00_AM-removebg-preview.png'%}" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{%static 'css/assets/bootstrap.min.css'%}">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{%static 'css/assets/font-awesome.min.css'%}">
+	<!-- Popup -->
+	<link href="{%static 'css/assets/magnific-popup.css'%}" rel="stylesheet"> 
+	<!-- Revolution Slider -->
+	<link rel="stylesheet" href="{%static 'css/assets/revolution/layers.css'%}">
+	<link rel="stylesheet" href="{%static 'css/assets/revolution/navigation.css'%}">
+	<link rel="stylesheet" href="{%static 'css/assets/revolution/settings.css'%}">	
+    <!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:600,700%7COpen+Sans:400,600" rel="stylesheet">     
+	<!-- Slick Slider -->
+	<link href="{%static 'css/assets/slick.css'%}" rel="stylesheet"> 	
+	<link href="{%static 'css/assets/slick-theme.css'%}" rel="stylesheet"> 	
+	<!-- Mean Menu-->
+	<link rel="stylesheet" href="{%static 'css/assets/meanmenu.css'%}">   
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="{%static 'css/style.css'%}">
+	<link rel="stylesheet" href="{%static 'css/responsive.css'%}">
+</head>
+<body>
+<!-- Preloader -->
+ {% comment %} <div id="preloader">
+	<div id="status"></div>
+</div>  {% endcomment %}
+<header id="header">
+	<div class="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-xs-12 header-top-left">
+					<ul class="list-unstyled">
+						<li><i class="fa fa-phone top-icon"></i> +123 456 789</li>
+						<li><i class="fa fa-envelope top-icon"></i> hello@Lumen.com</li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-xs-12 header-top-right">
+					<ul class="list-unstyled">
+						<li><a href=""><i class="fa fa-user-plus top-icon"></i> Sing up</a></li>
+						<li><a href=""><i class="fa fa-lock top-icon"></i>Login</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div><!-- Ends: .header-top -->
+
+	<div class="header-body">
+		<nav class="navbar edu-navbar">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="" class="navbar-brand  data-scroll"><img src="{%static 'images/WhatsApp_Image_2024-10-01_at_7.54.00_AM-removebg-preview.png'%}" alt="" height = "50px"><span> </span></a>
+				</div>
+
+				<div class="collapse navbar-collapse edu-nav main-menu" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav pull-right">
+						<li class="active" ><a data-scroll="" href="">Home</a>
+							<!-- dropdwon start -->
+                            {% comment %} <ul class="dropdown list-unstyled">
+                                <li><a href="">Home Version One</a></li>
+                                <li><a href="index-02.html">Home Version Two</a></li>
+                                <li><a href="index-03.html">Home Version Three</a></li>
+                                <li><a href="index-04.html">Home Version Four</a></li>
+                            </ul> {% endcomment %}
+                            <!-- dropdown end -->
+						</li>
+						{% comment %} <li><a data-scroll="" href="courses-01.html">Courses</a>
+							<!-- dropdwon start -->
+                            <ul class="dropdown list-unstyled">
+                                <li><a href="courses-01.html">Course Style One</a></li>
+                                <li><a href="courses-02.html">Course Style Two</a></li>
+                                <li><a href="courses-03.html">Course Style Three</a></li>
+                                <li class="dropdown-list-box-02"><a href="#">Dropdown<i class="fa fa-angle-right menu-icon"></i></a>
+	                                <ul class="dropdown-list_2 list-unstyled">
+	                                    <li><a href="#">Label One</a></li>
+	                                    <li><a href="#">Label One</a></li>
+	                                    <li><a href="#">Label One</a></li>
+	                                    <li class="dropdown-list-box-03"><a href="#">Label One<i class="fa fa-angle-right menu-icon"></i></a>
+			                                <ul class="dropdown-list_3 list-unstyled">
+			                                    <li><a href="#">Label Two</a></li>
+			                                    <li><a href="#">Label Two</a></li>
+			                                </ul>
+	                                    </li>
+	                                </ul>									
+                                </li>
+                                <li><a href="courses-carousel.html">Course Carousel Style</a></li>
+                                <li><a href="course-details.html">Course Details</a></li>
+                                <li><a href="course-details-left-sidebar.html">Course Details Sidebar</a></li>
+                            </ul>
+                            <!-- dropdown end -->
+						</li> {% endcomment %}
+						<li><a data-scroll href="">Admissions</a>
+							<!-- dropdwon start -->
+                            {% comment %} <ul class="dropdown list-unstyled">
+                                <li><a href="event-list.html">Event List One</a></li>
+                                <li><a href="event-list-1.html">Event List Two</a></li>
+                                <li><a href="event-grid-2.html">Event Two Grid</a></li>
+                                <li><a href="event-grid-3.html">Event Three Grid</a></li>
+								<li><a href="event-details.html">Event Details</a></li>
+                            </ul> {% endcomment %}
+                            <!-- dropdown end -->
+						</li>
+						{% comment %} <li><a data-scroll href="#">Pages</a>
+							<ul class="list-unstyled dropdown">
+                                <li><a href="courses-01.html">Courses</a></li>
+                                <li><a href="event-list.html">Events</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="teachers-01.html">Teachers</a></li>
+                                <li class="dropdown-list-box-02"><a href="#">Dropdown<i class="fa fa-angle-right menu-icon"></i></a>
+	                                <ul class="dropdown-list_2 list-unstyled">
+	                                    <li><a href="#">Label One</a></li>
+	                                    <li><a href="#">Label One</a></li>
+	                                    <li><a href="#">Label One</a></li>
+	                                    <li class="dropdown-list-box-03"><a href="#">Label One<i class="fa fa-angle-right menu-icon"></i></a>
+			                                <ul class="dropdown-list_3 list-unstyled">
+			                                    <li><a href="#">Label Two</a></li>
+			                                    <li><a href="#">Label Two</a></li>
+			                                </ul>
+	                                    </li>
+	                                </ul>									
+                                </li>
+                                <li><a href="teachers-profile.html">Teachers Porfile</a></li>
+                                <li><a href="become-a-teacher.html">Become a Teacher</a></li>
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="register.html">Registation</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="blog-post.html">Post</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+							</ul>
+						</li> {% endcomment %}
+						<li><a data-scroll href="">About Us</a>
+							<!-- dropdwon start -->
+                            {% comment %} <ul class="dropdown list-unstyled">
+                                <li><a href="teachers-01.html">Teachers Style One</a></li>
+                                <li><a href="teachers-02.html">Teachers Style Two</a></li>
+                                <li><a href="teachers-profile.html">Teachers Porfile</a></li>
+                                <li><a href="become-a-teacher.html">Become a Teacher</a></li>
+                            </ul> {% endcomment %}
+                            <!-- dropdown end -->
+						</li>
+						<li><a data-scroll href="">Blog</a>
+							<!-- dropdwon start -->
+                            {% comment %} <ul class="dropdown list-unstyled">
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="blog-post.html">Blog Post</a></li>
+                            </ul> {% endcomment %}
+                            <!-- dropdown end -->
+						</li>
+						<li><a data-scroll href="">Contact</a></li>
+						<li><a data-scroll href="#"><i class="fa fa-search search_btn"></i></a>
+							<div id="search">
+							  	<button type="button" class="close">×</button>
+							 	 <form>
+							   		 <input type="search" value="" placeholder="Search here...."  required/>
+							   		 <button type="submit" class="btn btn_common blue">Search</button>
+							 	 </form>
+							</div>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+	</div>	
+
+ 	<!--==================
+		Slider
+	===================-->
+    <div class="rev_slider_wrapper">
+       <div id="rev_slider_1" class="rev_slider" style="display:none">
+
+            <!-- BEGIN SLIDES LIST -->
+            <ul>
+				<li data-transition="boxfade" data-title="Slide Title" data-param1="Additional Text" data-thumb="{%static 'images/index/slide.jpeg'%}">
+                	<div class="slider-overlay"></div>
+					<!-- SLIDE'S MAIN BACKGROUND IMAGE -->
+					<img src="{%static 'images/index/WhatsApp Image 2024-10-04 at 9.09.25 PM.jpeg'%}" alt="Sky" class="rev-slidebg">
+					<!-- BEGIN BASIC TEXT LAYER -->
+					<!-- LAYER NR. 1 -->
+					<div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 header-1 title-line-1" 
+						data-x="left" data-hoffset="0" 
+						data-y="center" data-voffset="-140" 
+						data-frames='[{"delay":0,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+						style="z-index: 6; font-size:60px; color:#fff; font-family: 'Montserrat', sans-serif;, serif; white-space: nowrap;font-weight:700;">Lumen Christi Basic Science School
+					</div>
+					
+					<!-- LAYER NR. 2 -->
+					<div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 header-1 title-line-2" 
+						data-x="left" data-hoffset="0" 
+						data-y="center" data-voffset="-80" 
+						data-frames='[{"delay":1000,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+						style="z-index: 6; font-size:60px; color:#fff; font-family: 'Montserrat', sans-serif;, serif; white-space: nowrap;font-weight:700;">Abuja
+					</div>
+					
+					<!-- LAYER NR. 3 -->
+					<div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 header-p" 
+						data-x="left" data-hoffset="0" 
+						data-y="center" data-voffset="-10" 
+						data-frames='[{"delay":1000,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+						style="z-index: 6; line-height:25px; font-size:15px; color:#fff; font-family: 'Open Sans', sans-serif;, serif; white-space: nowrap;">We don't just give kids an education and life experiences that will help them achieve. <br>We help them succeed by discovering and daring to lead in an area in which they are passionate.
+					</div>						
+					
+					<!-- LAYER NR. 4 -->
+					<div class="tp-caption lfb tp-resizeme header-btn" 
+						data-x="left" data-hoffset="0" 
+						data-y="center" data-voffset="90" 
+						data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:bottom;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+						style="z-index: 8;"><a href="#." class="el-btn-regular slider-btn-left">Get Started Now</a> <a href="#." class="el-btn-regular">View Courses</a>
+					</div>
+				</li>
+                <li data-transition="random" data-title="Slide Title" data-param1="Additional Text" data-thumb="{%static 'images/index/slider-02.jpg'%}">
+                	<div class="slider-overlay"></div>
+					<!-- SLIDE'S MAIN BACKGROUND IMAGE -->
+					<img src="{%static 'images/index/WhatsApp Image 2024-10-07 at 11.30.32 AM.jpeg'%}" alt="Sky" class="rev-slidebg">
+					<!-- BEGIN BASIC TEXT LAYER -->
+					<!-- LAYER NR.1 -->
+					<div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 header-1 title-line-1" 
+						data-x="left" data-hoffset="0" 
+						data-y="center" data-voffset="-140" 
+						data-frames='[{"delay":0,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+						style="z-index: 6; font-size:60px; color:#fff; font-family: 'Montserrat', sans-serif;, serif; white-space: nowrap;font-weight:700;">Better education for
+					</div>
+					
+					<!-- LAYER NR. 2 -->
+					<div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4  header-1 title-line-2" 
+						data-x="left" data-hoffset="0" 
+						data-y="center" data-voffset="-80" 
+						data-frames='[{"delay":1000,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+						style="z-index: 6; font-size:60px; color:#fff; font-family: 'Montserrat', sans-serif;, serif; white-space: nowrap;font-weight:700;">A batter world
+					</div>
+					
+					<!-- LAYER NR. 3 -->
+					<div class="tp-caption font-lora sfb tp-resizeme letter-space-5 header-p" 
+						data-x="left" data-hoffset="0" 
+						data-y="center" data-voffset="-10" 
+						data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:top;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+						style="z-index: 6; line-height:25px; font-size:15px; color:#fff; font-family: 'Open Sans', sans-serif;, serif; white-space: nowrap;">Our firm belief is that every child should have access to a supportive and demanding education. <br>For this reason, we only accept students who are accepted initially.
+					</div>
+					
+					<!-- LAYER NR. 4 -->
+					<div class="tp-caption lfb tp-resizeme header-btn" 
+						data-x="left" data-hoffset="0" 
+						data-y="center" data-voffset="90" 
+						data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:bottom;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+						style="z-index: 8;"><a href="#." class="el-btn-regular slider-btn-left">Get Started Now</a> <a href="#." class="el-btn-regular">View Courses</a>
+					</div>
+				</li>
+            </ul><!-- END SLIDES LIST -->
+
+        </div><!-- END SLIDER CONTAINER -->
+    </div><!-- END SLIDER CONTAINER WRAPPER -->
+</header>
+	<!--  End header section-->
+
+
+{%block content%}
+
+{%endblock content%}
+
+<!-- Footer Area section -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class=" col-sm-12 footer-content-box">
+				<div class="col-sm-3">
+					<h3><span><i class="fa fa-graduation-cap footer-h-icon"></i></span> Lumen</h3>
+					<p>We are Educatios, creat your passion and inspiration. And hope success will come for your dream. Please send email and get latest news.</p>
+					<ul class="list-unstyled">
+						<li><span><i class="fa fa-phone footer-icon"></i></span>0123-456-789</li>
+						<li><span><i class="fa fa-envelope footer-icon"></i></span>hello@education.com</li>
+						<li><span><i class="fa fa-map-marker footer-icon"></i></span>01 Central Park, NYC</li>
+					</ul>
+				</div>
+
+				<div class="col-sm-2">
+					<h3>Courses</h3>
+					<ul class="list-unstyled">
+						<li><a href="#"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>Web Design</a></li>
+						<li><a href="#"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>Apps Developer</a></li>
+						<li><a href="#"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>Graphic Design</a></li>
+						<li><a href="#"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>PHP Tranning</a></li>
+						<li><a href="#"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>IOS Developer</a></li>
+						<li><a href="#"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>App Design</a></li>
+					</ul>
+				</div>
+
+				<div class="col-sm-2">
+					<h3>Links</h3>
+					<ul class="list-unstyled">
+						<li><a href="#"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>About Us</a></li>
+						<li><a href="#"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>Teacher</a></li>
+						<li><a href="#"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>Blog</a></li>
+						<li><a href="#"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>Events</a></li>
+						<li><a href="#"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>Gallery</a></li>
+						<li><a href="#"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>Contact</a></li>
+					</ul>
+				</div>
+
+				<div class="col-sm-2">
+					<h3>Support</h3>
+					<ul class="list-unstyled">
+						<li><a href="#"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>Documentation</a></li>
+						<li><a href="#"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>Forums</a></li>
+						<li><a href="#"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>Language Packs</a></li>
+						<li><a href="#"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>Release Status</a></li>
+						<li><a href="#"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>Documentation</a></li>
+						<li><a href="#"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>Forums</a></li>
+					</ul>
+				</div>	
+
+				<div class="col-sm-3">
+					<h3>Get in touch</h3>
+					<p>Enter your email and we'll send you more information.</p>
+
+					<form action="#">
+						<div class="form-group">
+							<input placeholder="Your Email" type="email" required="">
+							<div class="submit-btn">
+								<button type="submit" class="text-center">Subscribe</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="footer-bottom-inner">
+				<div class="row">
+					<div class="col-md-6 col-sm-12 footer-no-padding">
+						<p>&copy; Copyright 2019 EcologyTheme | All rights reserved</p>
+					</div>
+					<div class="col-md-6 col-sm-12 footer-no-padding">
+						<ul class="list-unstyled footer-menu text-right">
+							<li>Follow us:</li>
+							<li><a href="#"><i class="fa fa-facebook facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram instagram"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus google"></i></a></li>
+							<li><a href="#"><i class="fa fa-skype skype"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- ./ End footer-bottom -->		
+</footer><!-- ./ End Footer Area-->
+
+    <!-- ============================
+    JavaScript Files
+    ============================= -->
+    <!-- jQuery -->
+	<script src="{%static 'js/vendor/jquery-1.12.4.min.js'%}"></script>
+	<!-- Bootstrap JS -->
+	<script src="{%static 'js/assets/bootstrap.min.js'%}"></script>
+	 <!-- owl carousel -->
+    <script src="{%static 'js/assets/owl.carousel.min.js'%}"></script>
+ 	<!-- Revolution Slider -->
+	<script src="{%static 'js/assets/revolution/jquery.themepunch.revolution.min.js'%}"></script>
+	<script src="{%static 'js/assets/revolution/jquery.themepunch.tools.min.js'%}"></script>   
+	<!-- Popup -->
+    <script src="{%static 'js/assets/jquery.magnific-popup.min.js'%}"></script>
+    <!-- Sticky JS -->
+	<script src="{%static 'js/assets/jquery.sticky.js'%}"></script>
+	<!-- Counter Up -->
+    <script src="{%static 'js/assets/jquery.counterup.min.js'%}"></script>
+    <script src="{%static 'js/assets/waypoints.min.js'%}"></script>
+   <!-- Slick Slider-->
+    <script src="{%static 'js/assets/slick.min.js'%}"></script>
+    <!-- Main Menu -->
+	<script src="{%static 'js/assets/jquery.meanmenu.min.js'%}"></script>
+	<!-- Revolution Extensions -->
+	<script type="text/javascript" src="{%static 'js/assets/revolution/extensions/revolution.extension.actions.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/assets/revolution/extensions/revolution.extension.carousel.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/assets/revolution/extensions/revolution.extension.kenburn.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/assets/revolution/extensions/revolution.extension.layeranimation.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/assets/revolution/extensions/revolution.extension.migration.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/assets/revolution/extensions/revolution.extension.navigation.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/assets/revolution/extensions/revolution.extension.parallax.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/assets/revolution/extensions/revolution.extension.slideanims.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/assets/revolution/extensions/revolution.extension.video.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'js/assets/revolution/revolution.js'%}"></script>
+	<!-- Custom JS -->
+	<script src="{%static 'js/custom.js'%}"></script>
+</body>
+
+<!-- Mirrored from ecologytheme.com/theme/Lumen/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2024 18:11:11 GMT -->
+</html>

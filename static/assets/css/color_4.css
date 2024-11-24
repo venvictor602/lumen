@@ -1,0 +1,42 @@
+
+/*Form*/
+#left_form {
+	background: #1D976C;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Wizard Buttons*/
+.button-back,
+.button-next {
+	background: #1D976C;
+}
+
+/*General links color*/
+a {
+	color: #1D976C;
+}
+a:hover,
+a:focus {
+	color: #333;
+}
+a.btn_1,
+.btn_1 {
+	background: #1D976C;
+}
+
+a.btn_1:hover,
+.btn_1:hover {
+	background: #333;
+    color: #fff;
+}
+
+h2.main_title {
+    color: #1D976C;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #1D976C;
+}
+.team-item-detail-inner .social li a:hover {
+	color: #1D976C;
+}
